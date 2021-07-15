@@ -24,6 +24,9 @@
     <ClInclude Include="..\include\Room.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\Game.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\Main.cpp">
