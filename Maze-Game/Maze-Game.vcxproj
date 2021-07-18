@@ -140,9 +140,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\include\Def.h" />
+    <ClInclude Include="..\include\Door.h" />
     <ClInclude Include="..\include\Game.h" />
     <ClInclude Include="..\include\MapSite.h" />
     <ClInclude Include="..\include\Room.h" />
+    <ClInclude Include="..\include\Wall.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\Main.cpp" />

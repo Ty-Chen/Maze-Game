@@ -27,6 +27,12 @@
     <ClInclude Include="..\include\Game.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\Wall.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Door.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\Main.cpp">
