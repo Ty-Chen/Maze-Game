@@ -30,8 +30,9 @@
 *.exe
 *.out
 *.app
-doc/.vs/MazeGame/v16/.suo
-.vs/MazeGame/v16/.suo
-.vs/MazeGame/v16/Browse.VC.db
-Maze-Game/x64/Debug/Maze-Game.log
-Maze-Game/x64/Debug/Maze-Game.tlog/Maze-Game.lastbuildstate
+*.log
+*.suo
+*.db
+*.ipch
+*.lastbuildstate
+
