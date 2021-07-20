@@ -33,6 +33,12 @@
     <ClInclude Include="..\include\Door.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\Maze.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\MazeGame.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\Main.cpp">
