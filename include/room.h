@@ -1,3 +1,4 @@
+﻿#pragma once
 #include "MapSite.h"
 #include "Def.h"
 
@@ -6,8 +7,8 @@ class Room : public MapSite
 public:
     Room(int nRoomID);
 
-    MapSite* GetSide(Direction) const;
-    void SetSide(Direction, MapSite*);
+    MapSite* GetSide(int nSide) const;
+    void SetSide(int nSide, MapSite* pWall);
 
     virtual void Enter();
 

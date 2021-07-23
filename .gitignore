@@ -36,3 +36,6 @@
 *.ipch
 *.lastbuildstate
 
+*.tlog
+*.idb
+*.pdb
