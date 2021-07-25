@@ -4,11 +4,14 @@
 class MazeGame
 {
 public:
-	MazeGame();
-	~MazeGame();
+    MazeGame();
+    ~MazeGame();
 
-	void Init();
-	void UnInit();
+    void Init();
+    void UnInit();
 
-	Maze* CreateMazeNormal();
+    void GameStart();
+
+private:
+    Maze* __CreateMazeNormal();
 };

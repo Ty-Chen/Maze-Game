@@ -2,7 +2,7 @@
 #include "../include/Wall.h"
 #include "../include/MazeGame.h"
 
-Maze* MazeGame::CreateMazeNormal()
+Maze* MazeGame::__CreateMazeNormal()
 {
     Maze* pMaze  = NULL;
     Room* pRoom1 = NULL;
