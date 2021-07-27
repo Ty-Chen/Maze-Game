@@ -3,6 +3,8 @@
 
 class MazeGame
 {
+    Maze* m_Maze;
+
 public:
     MazeGame();
     ~MazeGame();

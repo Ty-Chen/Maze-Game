@@ -2,6 +2,11 @@
 #include "../include/Wall.h"
 #include "../include/MazeGame.h"
 
+void MazeGame::GameStart()
+{
+    m_Maze = __CreateMazeNormal();
+}
+
 Maze* MazeGame::__CreateMazeNormal()
 {
     Maze* pMaze  = NULL;
