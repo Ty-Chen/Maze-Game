@@ -1,6 +1,6 @@
-﻿#include "../include//Door.h"
-#include "../include/Wall.h"
-#include "../include/MazeGame.h"
+﻿#include "Door.h"
+#include "Wall.h"
+#include "MazeGame.h"
 
 void MazeGame::GameStart()
 {

@@ -1,4 +1,4 @@
-﻿#include "../include/MazeGame.h"
+﻿#include "MazeGame.h"
 
 int main()
 {
