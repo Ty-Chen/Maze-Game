@@ -1,5 +1,6 @@
 ﻿#pragma once
 #include "Maze.h"
+#include "MazeFactory.h"
 
 class MazeGame
 {
@@ -16,4 +17,5 @@ public:
 
 private:
     Maze* __CreateMazeNormal();
+    Maze* __CreateMazeByAbastractFactory(MazeFactory& factory);
 };

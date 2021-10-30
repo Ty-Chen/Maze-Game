@@ -34,3 +34,31 @@ Maze* MazeGame::__CreateMazeNormal()
 
     return pMaze;
 }
+
+Maze* MazeGame::__CreateMazeByAbastractFactory(MazeFactory& factory)
+{
+    Maze* pMaze  = NULL;
+    Room* pRoom1 = NULL;
+    Room* pRoom2 = NULL;
+    Door* pDoor  = NULL;
+
+    pMaze  = factory.MakeMaze();
+    pRoom1 = factory.MakeRoom(1);
+    pRoom2 = factory.MakeRoom(2);
+    pDoor  = factory.MakeDoor(pRoom1, pRoom2);
+
+    pMaze->AddRoom(pRoom1);
+    pMaze->AddRoom(pRoom2);
+
+    pRoom1->SetSide(North, factory.MakeWall());
+    pRoom1->SetSide(East, pDoor);
+    pRoom1->SetSide(South, factory.MakeWall());
+    pRoom1->SetSide(West, factory.MakeWall());
+
+    pRoom2->SetSide(North, factory.MakeWall());
+    pRoom2->SetSide(East, factory.MakeWall());
+    pRoom2->SetSide(South, factory.MakeWall());
+    pRoom2->SetSide(West, pDoor);
+
+    return pMaze;
+}

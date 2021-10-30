@@ -22,7 +22,7 @@ public:
         return new Wall;
     }
 
-    virtual Room* MakeRoome(int nIndex) const
+    virtual Room* MakeRoom(int nIndex) const
     {
         return new Room(nIndex);
     }
