@@ -33,4 +33,24 @@ public:
     }
 };
 
+class EnchantedMazeFactory : public MazeFactory
+{
+public:
+    EnchantedMazeFactory();
+    ~EnchantedMazeFactory();
+
+    virtual Room* MakeRoom(int nIndex) const
+    {
+        return new EnchantedRoom(nIndex, CastSpell());
+    }
+
+    virtual Door* MakeDoor(Room* pRoom1, Room* pRoom2)
+    {
+        return new DoorNeedingSpell(pRoom1, pRoom2);
+    }
+
+protected:
+    std::string CastSpell() const;
+};
+
 #endif // !_MAZE_FACTORY_H_

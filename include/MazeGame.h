@@ -15,6 +15,8 @@ public:
 
     void GameStart();
 
+    void GameStartByFactory();
+
 private:
     Maze* __CreateMazeNormal();
     Maze* __CreateMazeByAbastractFactory(MazeFactory& factory);

@@ -7,6 +7,15 @@ void MazeGame::GameStart()
     m_Maze = __CreateMazeNormal();
 }
 
+void MazeGame::GameStartByFactory()
+{
+    MazeFactory          Factory;
+    EnchantedMazeFactory EnchantedFactory;
+
+    m_Maze = __CreateMazeByAbastractFactory(Factory);
+    m_Maze = __CreateMazeByAbastractFactory(EnchantedFactory);
+}
+
 Maze* MazeGame::__CreateMazeNormal()
 {
     Maze* pMaze  = NULL;
