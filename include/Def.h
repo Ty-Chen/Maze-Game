@@ -7,3 +7,9 @@ enum Direction
     East,
     West
 };
+
+enum Type
+{
+    NormalMaze,
+    EnchantedMaze,
+};

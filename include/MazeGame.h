@@ -15,7 +15,7 @@ public:
 
     void GameStart();
 
-    void GameStartByFactory();
+    void GameStartByFactory(int nType);
 
 private:
     Maze* __CreateMazeNormal();

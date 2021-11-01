@@ -7,13 +7,26 @@ void MazeGame::GameStart()
     m_Maze = __CreateMazeNormal();
 }
 
-void MazeGame::GameStartByFactory()
+void MazeGame::GameStartByFactory(int nType)
 {
     MazeFactory          Factory;
     EnchantedMazeFactory EnchantedFactory;
 
-    m_Maze = __CreateMazeByAbastractFactory(Factory);
-    m_Maze = __CreateMazeByAbastractFactory(EnchantedFactory);
+    switch (nType)
+    {
+    case NormalMaze:
+
+        m_Maze = __CreateMazeByAbastractFactory(Factory);
+        break;
+
+    case EnchantedMaze:
+
+        m_Maze = __CreateMazeByAbastractFactory(EnchantedFactory);
+        break;
+
+    default:
+        break;
+    }
 }
 
 Maze* MazeGame::__CreateMazeNormal()
