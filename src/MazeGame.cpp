@@ -7,7 +7,7 @@ void MazeGame::GameStart()
     m_Maze = __CreateMazeNormal();
 }
 
-void MazeGame::GameStartByFactory(int nType)
+void MazeGame::GameStartByAbstractFactory(int nType)
 {
     MazeFactory          Factory;
     EnchantedMazeFactory EnchantedFactory;
