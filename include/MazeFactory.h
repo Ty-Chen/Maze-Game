@@ -53,4 +53,9 @@ protected:
     std::string CastSpell() const;
 };
 
+class BombedMazeFactory : public MazeFactory
+{
+
+};
+
 #endif // !_MAZE_FACTORY_H_
