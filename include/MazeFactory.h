@@ -55,7 +55,11 @@ protected:
 
 class BombedMazeFactory : public MazeFactory
 {
+public:
+    BombedMazeFactory();
+    ~BombedMazeFactory();
 
+    
 };
 
 #endif // !_MAZE_FACTORY_H_
