@@ -22,3 +22,9 @@ class EnchantedRoom : public Room
 public:
     EnchantedRoom(int nRoomID, std::string szSpell);
 };
+
+class BombedRoom : public Room
+{
+public:
+    BombedRoom(int nRoomID, std::string szSpell);
+};

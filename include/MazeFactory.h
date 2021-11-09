@@ -59,7 +59,19 @@ public:
     BombedMazeFactory();
     ~BombedMazeFactory();
 
-    
+    virtual Room* MakeRoom(int nIndex) const
+    {
+        return new BombedRoom(nIndex, CastSpell());
+    }
+
+    virtual Door* MakeDoor(Room* pRoom1, Room* pRoom2)
+    {
+        return new BombedDoor(pRoom1, pRoom2);
+    }
+
+protected:
+    std::string CastSpell() const;
+
 };
 
 #endif // !_MAZE_FACTORY_H_

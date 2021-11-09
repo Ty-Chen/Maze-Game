@@ -17,3 +17,9 @@ class DoorNeedingSpell : public Door
 public:
     DoorNeedingSpell(Room* pOneSide, Room* pOtherSide);
 };
+
+class BombedDoor : public Door
+{
+public:
+    BombedDoor(Room* pOneSide, Room* pOtherSide);
+};
