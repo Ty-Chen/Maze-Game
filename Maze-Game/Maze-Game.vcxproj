@@ -151,6 +151,7 @@
     <ClInclude Include="..\include\MazeGame.h" />
     <ClInclude Include="..\include\Room.h" />
     <ClInclude Include="..\include\Wall.h" />
+    <ClInclude Include="MazeBuilder.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\Main.cpp" />
